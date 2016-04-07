@@ -1,0 +1,488 @@
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700|Montserrat:400,700);
+
+/* ======================
+
+Base Styles
+
+======================= */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+	/*min-height: calc(100vh - 51px);  This sticks the footer to the bottom of the screen*/ 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #594649;
+}
+
+body {
+  background: #fff;
+  font: 1em/1.5 'Libre Baskerville', serif;
+  color: #594649;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ======================
+
+Navigation Styles
+
+======================= */
+
+.mainNav {
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  align-items: center;
+  list-style-type: none;
+}
+
+.name {
+  color: #594649;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  text-transform: none;
+  margin: .7em 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.navList {
+  display: flex;
+  flex-flow: column;
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding: 0;
+  width: 100%;
+}
+
+.navList a {
+  background-color: #b6c9cd;
+  color: #594649;
+  display: block;
+  padding: 1em 2.5em;
+  margin: 0.3125em 0;
+  border: 1px solid transparent;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.navList a:hover {
+  color: #594649;
+  background-color: #fff;
+  border-color: #594649;
+}
+
+/* ======================
+
+Header Styles
+
+======================= */
+
+.headerFlex {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  overflow: hidden;
+  background: url(../img/notomRoadCrossPattern1600x685.jpg) #eee no-repeat center center fixed; 
+  background-size: cover;
+  min-height: 400px;
+}
+
+.headerPic {
+  background: #f64740;
+  width: 150px;
+  height: 150px;
+  margin: 2.5em 1em 0 1em;
+}
+
+.headerTag {
+  max-width: 70%;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 2.5em .4em;
+  color: #594649;
+}
+
+/* ======================
+
+Portfolio Styles
+
+======================= */
+
+#portfolio {
+  background: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#portfolio h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2.5em 0 1em 0;
+}
+
+/* ======================
+
+Gallery Styles
+
+======================= */
+
+.gallery {
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
+.galleryItem {
+  position: relative;
+  margin: .5em 0;
+  cursor: pointer;
+}
+
+.galleryItem img {
+  max-width: 100%;
+  min-width: 320px;
+  min-height: 230px;
+  opacity: 1;
+   -webkit-transition: all 0.2s ease-in; 
+     -moz-transition: all  0.2s ease-in; 
+       -o-transition: all  0.2s ease-in;  
+          transition: all  0.2s ease-in;
+}
+
+.galleryItem h3 {
+  position: absolute;
+  text-transform: uppercase;
+  opacity: 0;
+  color: #594649;
+  top: 50%;
+  left: 25%;
+  margin: 0;
+  
+}
+
+.galleryItem:hover h3 {
+  opacity: 1;
+}
+
+.galleryItem:hover img {
+  opacity: 0.1;
+   -webkit-transition: all 0.3s ease-in; 
+     -moz-transition: all  0.3s ease-in; 
+       -o-transition: all  0.3s ease-in;  
+          transition: all  0.3s ease-in;
+}
+
+/* ======================
+
+Skills Styles
+
+======================= */
+
+.skills {
+  margin: 0 1em 2em;
+}
+
+.skillsWrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.skills h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1.5em 0 .5em 0;
+  /*border-bottom: 2px dashed #594649;*/
+}
+
+.s1 ul,
+.s2 ul,
+.s3 ul,
+.s4 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.s1,
+.s2,
+.s3,
+.s4 {
+  margin: 0 0 0 1em;
+  padding: 0 0 0 1em;
+}
+
+.s1 {
+  order: 1;
+}
+
+.s2 {
+  order: 2;
+}
+
+.s3 {
+  order: 3;
+}
+
+.s4 {
+  order: 4;
+}
+
+/* ======================
+
+Contact Styles
+
+======================= */
+
+#contact {
+  background: #b6c9cd;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0 0 2.5em 0;
+  margin: 0 0 1em 0;
+}
+
+#contact h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2.5em 0 1em 0;
+}
+
+.contactWrapper {
+  display: flex;
+  flex-flow: row;
+}
+
+.c1 {
+  padding-right: 1em;
+}
+
+.c2 {
+  padding-left: 1em;
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#contact p {
+  margin: auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* ======================
+
+Footer Styles
+
+======================= */
+
+footer {
+  font-size: 1em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  color: #594649;
+  padding: 0 0 1em 0;
+}
+
+.footerList {
+  display: flex;
+  flex-flow: row;
+  list-style-type: none;
+  color: #594649;
+}
+
+ul.footerList {
+  margin: 0;
+  padding: 0;
+}
+
+.footerList li {
+  padding: 0 .4em;
+}
+
+.footerList a {
+  text-decoration: none;
+}
+
+.fa-linkedin-square,
+.fa-github-square {
+  color: #594649;
+  transition: all .2s ease-in-out;
+}
+
+.fa-linkedin-square:hover,
+.fa-github-square:hover {
+  transform: scale(1.5);
+}
+
+/* ======================
+
+Media Queries
+
+======================= */
+
+@media (min-width: 422px) {
+  .skillsWrapper {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+	.wrapper {
+		width: 90%;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+
+  .mainNav,
+  .navList {
+    display: flex;
+  }
+
+  .navList {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .navList a {
+    background: #fff;
+    padding: 1em 2.5em;
+  }
+
+  .headerFlex {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .headerPic {
+    margin: 2.5em 0;
+    border: none;
+  }
+
+  .headerTag {
+    margin: 0 .5em;
+    align-self: center;
+  }
+
+  .gallery {
+    width: 95%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .galleryItem {
+    max-width: 300px;
+    height: auto;
+  }
+
+  .skillsWrapper {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  footer {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  footer .name {
+    width: auto;
+  }
+
+}
+
+@media (min-width: 999px) {
+  .headerFlex {
+    min-height: 600px;
+  }
+
+  .skillsWrapper {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .mainNav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navList {
+    justify-content: flex-end;
+  }
+
+  .name {
+    width: 300px;
+  }
+
+  #portfolio {
+    margin: 5% auto 0;
+  }
+
+  .gallery {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .galleryItem {
+<<<<<<< HEAD
+    max-width: 33%;
+=======
+    width: auto;
+>>>>>>> origin/master
+    height: auto;
+  }
+
+  .galleryItem img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .skills {
+    margin: 5% 0 2em 0;
+  }
+
+  .skillsWrapper {
+    margin: 0 auto;
+    width: 50%;
+  }
+
+  #contact {
+    margin: 5% 0 1em 0;
+  }
+
+}
