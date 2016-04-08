@@ -459,11 +459,8 @@ Media Queries
   }
 
   .galleryItem {
-<<<<<<< HEAD
     max-width: 33%;
-=======
     width: auto;
->>>>>>> origin/master
     height: auto;
   }
 
