@@ -175,14 +175,13 @@ Gallery Styles
 }
 
 .galleryItem h3 {
-  position: absolute;
   text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
   opacity: 0;
   color: #594649;
-  top: 50%;
-  left: 25%;
   margin: 0;
-  
 }
 
 .galleryItem:hover h3 {
