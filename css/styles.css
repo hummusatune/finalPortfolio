@@ -14,8 +14,7 @@ html {
   box-sizing: inherit;
 }
 
-.wrapper {
-	/*min-height: calc(100vh - 51px);  This sticks the footer to the bottom of the screen*/ 
+.wrapper { 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -25,13 +24,13 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   color: #594649;
 }
 
 body {
   background: #fff;
-  font: 1em/1.5 'Libre Baskerville', serif;
+  font: 1em/1.5 "Libre Baskerville", serif;
   color: #594649;
   position: relative;
 }
@@ -46,7 +45,7 @@ Navigation Styles
 
 ======================= */
 
-.mainNav {
+.main-Nav {
   display: flex;
   flex-flow: column;
   padding: 0;
@@ -59,22 +58,21 @@ Navigation Styles
   font-size: 1.7em;
   letter-spacing: 1px;
   text-transform: none;
-  margin: .7em 0;
-  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0.7em 0;
 }
 
-.navList {
+.nav-List {
   display: flex;
   flex-flow: column;
   list-style-type: none;
   text-transform: uppercase;
   text-align: center;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   padding: 0;
   width: 100%;
 }
 
-.navList a {
+.nav-List a {
   background-color: #b6c9cd;
   color: #594649;
   display: block;
@@ -86,7 +84,7 @@ Navigation Styles
   transition: all 0.4s ease-in-out;
 }
 
-.navList a:hover {
+.nav-List a:hover {
   color: #594649;
   background-color: #fff;
   border-color: #594649;
@@ -98,29 +96,21 @@ Header Styles
 
 ======================= */
 
-.headerFlex {
+.header-Flex {
   display: flex;
   flex-flow: column;
   align-items: center;
   overflow: hidden;
   background: url(../img/notomRoadCrossPattern1600x685.jpg) #eee no-repeat center center fixed; 
   background-size: cover;
-  min-height: 400px;
+  min-height: 25em;
 }
 
-.headerPic {
+.header-Pic {
   background: #f64740;
-  width: 150px;
-  height: 150px;
+  width: 9.375em;
+  height: 9.375em;
   margin: 2.5em 1em 0 1em;
-}
-
-.headerTag {
-  max-width: 70%;
-  font-size: 1.1em;
-  text-align: center;
-  margin: 2.5em .4em;
-  color: #594649;
 }
 
 /* ======================
@@ -157,13 +147,13 @@ Gallery Styles
   text-align: center;
 }
 
-.galleryItem {
+.gallery-Item {
   position: relative;
-  margin: .5em 0;
+  margin: 0.5em 0;
   cursor: pointer;
 }
 
-.galleryItem img {
+.gallery-Item img {
   max-width: 100%;
   max-height: 100%;
   min-height: 100%;
@@ -175,7 +165,7 @@ Gallery Styles
           transition: all  0.2s ease-in;
 }
 
-.galleryItem h3 {
+.gallery-Item h3 {
   text-transform: uppercase;
   display: inline-block;
   text-align: center;
@@ -185,11 +175,11 @@ Gallery Styles
   margin: 0;
 }
 
-.galleryItem:hover h3 {
+.gallery-Item:hover h3 {
   opacity: 1;
 }
 
-.galleryItem:hover img {
+.gallery-Item:hover img {
   opacity: 0.1;
    -webkit-transition: all 0.3s ease-in; 
      -moz-transition: all  0.3s ease-in; 
@@ -207,7 +197,8 @@ Skills Styles
   margin: 0 1em 2em;
 }
 
-.skillsWrapper {
+.skills-Wrapper {
+  max-width: 21.8em;
   display: flex;
   flex-flow: row wrap;
 }
@@ -215,39 +206,38 @@ Skills Styles
 .skills h3 {
   text-align: center;
   text-transform: uppercase;
-  margin: 1.5em 0 .5em 0;
-  /*border-bottom: 2px dashed #594649;*/
+  margin: 1.5em 0 0.5em 0;
 }
 
-.s1 ul,
-.s2 ul,
-.s3 ul,
-.s4 ul {
+.skill1 ul,
+.skill2 ul,
+.skill3 ul,
+.skill4 ul {
   list-style-type: none;
   padding: 0;
 }
 
-.s1,
-.s2,
-.s3,
-.s4 {
+.skill1,
+.skill2,
+.skill3,
+.skill4 {
   margin: 0 0 0 1em;
   padding: 0 0 0 1em;
 }
 
-.s1 {
+.skill1 {
   order: 1;
 }
 
-.s2 {
+.skill2 {
   order: 2;
 }
 
-.s3 {
+.skill3 {
   order: 3;
 }
 
-.s4 {
+.skill4 {
   order: 4;
 }
 
@@ -272,16 +262,16 @@ Contact Styles
   margin: 2.5em 0 1em 0;
 }
 
-.contactWrapper {
+.contact-Wrapper {
   display: flex;
   flex-flow: row;
 }
 
-.c1 {
+.contact1 {
   padding-right: 1em;
 }
 
-.c2 {
+.contact2 {
   padding-left: 1em;
 }
 
@@ -292,7 +282,7 @@ Contact Styles
 
 #contact p {
   margin: auto;
-  max-width: 500px;
+  max-width: 31.25em;
   text-align: center;
 }
 
@@ -311,30 +301,30 @@ footer {
   padding: 0 0 1em 0;
 }
 
-.footerList {
+.footer-List {
   display: flex;
   flex-flow: row;
   list-style-type: none;
   color: #594649;
 }
 
-ul.footerList {
+ul.footer-List {
   margin: 0;
   padding: 0;
 }
 
-.footerList li {
-  padding: 0 .4em;
+.footer-List li {
+  padding: 0 0.4em;
 }
 
-.footerList a {
+.footer-List a {
   text-decoration: none;
 }
 
 .fa-linkedin-square,
 .fa-github-square {
   color: #594649;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .fa-linkedin-square:hover,
@@ -349,7 +339,7 @@ Media Queries
 ======================= */
 
 @media (min-width: 422px) {
-  .skillsWrapper {
+  .skills-Wrapper {
     width: 90%;
   }
 }
@@ -357,42 +347,37 @@ Media Queries
 @media (min-width: 768px) {
 	.wrapper {
 		width: 90%;
-		max-width: 1024px;
+		max-width: 64em;
 		margin: 0 auto;
 	}
 
-  .mainNav,
-  .navList {
+  .main-Nav,
+  .nav-List {
     display: flex;
   }
 
-  .navList {
+  .nav-List {
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 0;
   }
 
-  .navList a {
+  .nav-List a {
     background: #fff;
     padding: 1em 2.5em;
   }
 
-  .headerFlex {
+  .header-Flex {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    min-height: 550px;
+    min-height: 34.375em;
   }
 
-  .headerPic {
+  .header-Pic {
     margin: 2.5em 0;
     border: none;
-  }
-
-  .headerTag {
-    margin: 0 .5em;
-    align-self: center;
   }
 
   .gallery {
@@ -402,19 +387,19 @@ Media Queries
     justify-content: space-around;
   }
 
-  .galleryItem {
-    max-width: 300px;
+  .gallery-Item {
+    max-width: 18.75em;
     height: auto;
   }
 
-  .skillsWrapper {
+  .skills-Wrapper {
     margin: 0 auto;
-    width: 80%;
+    max-width: 80%;
   }
 
   footer {
     width: 90%;
-    max-width: 1024px;
+    max-width: 64em;
     margin: 0 auto;
   }
 
@@ -425,27 +410,27 @@ Media Queries
 }
 
 @media (min-width: 999px) {
-  .headerFlex {
-    min-height: 600px;
+  .header-Flex {
+    min-height: 37.5em;
   }
 
-  .skillsWrapper {
+  .skills-Wrapper {
     width: 60%;
   }
 }
 
 @media (min-width: 1025px) {
-  .mainNav {
+  .main-Nav {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  .navList {
+  .nav-List {
     justify-content: flex-end;
   }
 
   .name {
-    width: 300px;
+    width: 18.75em;
   }
 
   #portfolio {
@@ -459,13 +444,13 @@ Media Queries
     justify-content: space-around;
   }
 
-  .galleryItem {
+  .gallery-Item {
     max-width: 33%;
     width: auto;
     height: auto;
   }
 
-  .galleryItem img {
+  .gallery-Item img {
     width: 100%;
     height: 100%;
   }
@@ -474,7 +459,7 @@ Media Queries
     margin: 5% 0 2em 0;
   }
 
-  .skillsWrapper {
+  .skills-Wrapper {
     margin: 0 auto;
     width: 50%;
   }
